@@ -1,4 +1,4 @@
-# Personal_Projects
+# Personal_Project
 
 The aim of the project is:
 1. To import the attributes from the given two csv files CSV1 and CSV2, Note (the names in two scv files may not be same)
