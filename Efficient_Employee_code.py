@@ -20,18 +20,18 @@ for i in range(1, len(lst)):                                      # Iterate or l
 
 s_list = sorted(ratio, key=lambda t: t[0])                        # Sort the ratio list with the ascending order of the ratio
 
-ans = []                                                          # ans list contains final ratio info
+result = []                                                          # result list contains final ratio info
 for i in range(1, len(lst)):
     z = lst[i].split(",")
     if z[0] == s_list[-1][1]:                                     # finds the name of the fastest worker from sorted list
-        ans.extend(z)							                  # adds the speed of that worker into the ans list
+        result.extend(z)							                  # adds the speed of that worker into the ans list
 
 for j in range(1, len(lst1)):
     k = lst1[j].split(",")
     if k[0] == s_list[-1][1]:                                    # finds the name of the fastest worker from sorted list
-        ans.extend((k[1],k[2]))							         # adds the speed of that worker into the ans list
+        result.extend((k[1],k[2]))							         # adds the speed of that worker into the ans list
 
-print("{0} is the most efficient worker, {0} has done {1} units of Work , using {2} unit resources, worker's Salary is: {3}K and gender is : {4}".format(ans[0], ans[1], ans[2], ans[3], ans[4]))
+print("{0} is the most efficient worker, {0} has done {1} units of Work , using {2} unit resources, worker's Salary is: {3}K and gender is : {4}".format(result[0], result[1], result[2], result[3], result[4]))
 
 #The final line Prints out the Name, Salary and Gender of the most Efficient Employee
 
