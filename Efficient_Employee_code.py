@@ -5,7 +5,7 @@
 
 # The code is as follows:
 
-file1 = open("d:/Efficient Employee/word.csv", "r")               # Opens 1st CSV file/ you can also use "with open" to open the file
+file1 = open("d:/Efficient Employee/word.csv", "r")               # Opens 1st CSV file you can also use "with open" to open the file
 lst = file1.readlines()
 file1.close()
 
